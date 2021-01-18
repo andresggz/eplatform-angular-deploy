@@ -14,10 +14,10 @@ export class RoadmapPageService {
 
   getRoadmapById(id: String): Observable<RoadmapSaveResponse>{
 
-    return this.http.get<RoadmapSaveResponse>(`http://localhost:8080/api/v1/roadmaps/${id}`);
+    return this.http.get<RoadmapSaveResponse>(`http://frozen-river-17298.herokuapp.com/api/v1/roadmaps/${id}`);
   }
 
   getCourse(url: string): Observable<CourseList>{
-    return this.http.get<CourseList>(`http://localhost:8080${url}`);
+    return this.http.get<CourseList>(`http://frozen-river-17298.herokuapp.com${url}`);
   }
 }

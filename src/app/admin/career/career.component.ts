@@ -18,6 +18,8 @@ export class CareerComponent implements OnInit {
 
   actualPage: number;
 
+  focus = true;
+
   constructor(private _builder: FormBuilder, private readonly careerAdminService: CareerAdminService) {
 
     this.createCareerForm = this._builder.group(

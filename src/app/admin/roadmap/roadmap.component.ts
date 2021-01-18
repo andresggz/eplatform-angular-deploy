@@ -24,6 +24,8 @@ export class RoadmapComponent implements OnInit {
 
   page: Number;
 
+  focus = true;
+
   constructor(private readonly route: ActivatedRoute, private readonly careerPageService: CareerPageService, private _builder: FormBuilder,
     private readonly roadmapAdminService: RoadmapAdminService) { 
     this.createRoadmapForm = this._builder.group(
@@ -72,6 +74,14 @@ export class RoadmapComponent implements OnInit {
     
     });
 
+    
+  }
+
+  previousPage(){
+
+  }
+
+  nextPage(){
     
   }
 
