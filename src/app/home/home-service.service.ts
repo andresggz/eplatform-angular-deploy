@@ -17,7 +17,7 @@ export class HomeServiceService {
 
   getCareers(): Observable<ResponsePagination>{
     
-    return this.http.get<ResponsePagination>('http://frozen-river-17298.herokuapp.com/api/v1/careers');
+    return this.http.get<ResponsePagination>('https://frozen-river-17298.herokuapp.com/api/v1/careers');
 
   }
 }

@@ -13,10 +13,10 @@ export class CareerPageService {
 
   getCareerById(id: String): Observable<CareerSaveResponse>{
 
-    return this.http.get<CareerSaveResponse>(`http://frozen-river-17298.herokuapp.com/api/v1/careers/${id}`);
+    return this.http.get<CareerSaveResponse>(`https://frozen-river-17298.herokuapp.com/api/v1/careers/${id}`);
   }
 
   getRoadmap(url: string): Observable<RoadmapListResponse>{
-    return this.http.get<RoadmapListResponse>(`http://frozen-river-17298.herokuapp.com${url}`);
+    return this.http.get<RoadmapListResponse>(`https://frozen-river-17298.herokuapp.com${url}`);
   }
 }
